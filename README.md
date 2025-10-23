@@ -68,17 +68,17 @@ This section describes my evolving strategy across the early stages of the proje
 - Normalise input ranges and outputs for stability.
 
 #### Modeling Approach
-- Constructed surrogate models to estimate the mean and variance of unknown functions.
-- Used the model to suggest new query points where improvement was most probable.
-- For higher-dimensional functions, experimented with:
+- Construct surrogate models to estimate the mean and variance of unknown functions.
+- Use the model to suggest new query points where improvement was most probable.
+- For higher-dimensional functions, experiment with:
   - Random restarts of acquisition optimisation.
   - Dimensionality-aware kernel tuning.
 
 #### Exploration vs. Exploitation
-- Adjusted acquisition hyperparameters dynamically:
+- Adjust acquisition hyperparameters dynamically:
   - Higher exploration coefficient early in optimisation.
-  - Gradual shift towards exploitation as model confidence improved.
-- Considered spatial diversity of query points to avoid local maxima.
+  - Gradual shift towards exploitation as model confidence improves.
+- Consider spatial diversity of query points to avoid local maxima.
 
 #### Future Directions
 - Incorporate SVM classifiers to separate high vs low-performance regions and focus search around decision boundaries.
